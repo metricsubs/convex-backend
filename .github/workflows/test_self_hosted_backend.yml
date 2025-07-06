@@ -42,9 +42,6 @@ jobs:
 
       - name: Cache pnpm artifacts
         uses: runs-on/cache@v4
-        env:
-          AWS_REGION: ${{ vars.AWS_REGION }}
-          RUNS_ON_S3_BUCKET_CACHE: ${{ vars.RUNS_ON_S3_BUCKET_CACHE }}
         with:
           path: |
             npm-packages/common/temp/build-cache

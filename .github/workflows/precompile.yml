@@ -8,7 +8,7 @@ on:
 jobs:
   release_dashboard:
     name: Build Convex Dashboard
-    runs-on: [self-hosted, aws, x64, xlarge]
+    runs-on: ubuntu-latest
     steps:
       - name: Check out code
         uses: actions/checkout@v4
